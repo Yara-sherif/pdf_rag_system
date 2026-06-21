@@ -131,7 +131,7 @@ Both the original and rewritten query are shown in the Streamlit UI. The caption
 
 **Query:** *"What is tokenization?"*
 
-**What happened:** Page 18, which contains the detailed tokenization introduction, was ranked 5th by FAISS (score 0.2891) and did not appear in the TF-IDF top results. The RRF final returned pages 48, 15, 22, 37, 32 — none of which contained the clearest tokenization examples. The answer given was correct in definition but missed the examples from the most relevant page.
+**What happened:** Page 18, which contains the detailed tokenization introduction, was ranked 5th by FAISS (score 0.2891) and did not appear in the TF-IDF top results. The RRF final returned pages 48, 15, 22, 37, 32 — none of which contained the clearest tokenization examples. The answer given was correct in definition but missed the examples from the most relevant page. 
 
 **Root cause — two compounding issues:**
 
@@ -148,6 +148,8 @@ Both the original and rewritten query are shown in the Streamlit UI. The caption
 
 **Remaining fix (not yet implemented):**
 Paragraph-level chunking would fully solve the root cause — a focused paragraph about tokenization would embed much more specifically than a full page mixing multiple topics. A cross-encoder re-ranker (e.g., `bge-reranker-v2-m3`) would also correctly score query–passage relevance without the centroid-averaging problem.
+
+Also, the next steps in this pipeline would require further enhancements in the hybrid retrievl tools or rely on faiss only with enhanced document preprocessing to enhance and increase quality.
 
 ---
 
