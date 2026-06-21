@@ -1,4 +1,13 @@
 # RAG Pipeline Report
+
+## Project Overview
+
+The broader goal of this project is to build a document-aware chatbot that allows users to upload their own documents — lecture notes, textbooks, papers — and ask questions or study interactively from them. The chatbot retrieves relevant content from the user's documents and uses a language model to answer questions grounded in that material, reducing hallucination and keeping responses tied to the actual source.
+
+This report focuses on the first milestone: designing and validating the core RAG pipeline and a working UI prototype using a single sample document. The pipeline and interface are built to be document-agnostic — the sample document serves only as an example for evaluating retrieval quality, chunking strategy, and end-to-end response accuracy before expanding to multi-document, multi-user support.
+
+---
+
 **Dataset:** *Introduction to Natural Language Processing*
 
 ---
