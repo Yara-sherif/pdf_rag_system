@@ -1,0 +1,22 @@
+QUESTIONS = [
+    # Q1 — core NLP concept
+    "What is tokenization and why is it an important preprocessing step in NLP?",
+    # Q2 — corpus categorisation
+    "What are the three broad categories of corpora described in the textbook?",
+    # Q3 — specific statistic
+    "How many words and synsets does English WordNet contain?",
+    # Q4 — algorithm comparison
+    "What is the difference between the Porter and Lancaster stemming algorithms?",
+    # Q5 — NOT in the book; should trigger hallucination guard
+    "What is Reciprocal Rank Fusion and how is it used in information retrieval?",
+    # Q6 — WordNet definition + example
+    "What is a synset in WordNet? Give an example from the textbook.",
+    # Q7 — grammar / formal language theory
+    "What rule-based formalism can handle centre-embedded recursion that finite-state machines cannot?",
+    # Q8 — Chapter 4 summary
+    "What were the four main text analysis operations covered in Chapter 4?",
+    # Q9 — corpus size fact
+    "What is the COBUILD Bank of English and how large was it at the time the textbook was written?",
+    # Q10 — corpus analysis terms
+    "What is the difference between concordancing and collocations in corpus analysis?",
+]

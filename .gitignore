@@ -1,0 +1,12 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated indexes (rebuild with pipeline/ingest.py)
+indexes/
+
+# macOS
+.DS_Store
